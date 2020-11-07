@@ -17,3 +17,5 @@ function toBinary(num) {
 
   return parseInt(binary.split('').reverse().join(''));
 }
+
+console.log(toBinary(1888));

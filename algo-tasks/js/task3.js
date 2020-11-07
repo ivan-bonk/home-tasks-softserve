@@ -34,3 +34,6 @@ function makeSingleSequence(firstArr, secondArr) {
 
   return mergeSort(seq);
 }
+
+
+console.log(makeSingleSequence([2, 3, 5, 7, 9, 29], [3, 5, 7, 11, 13, 15, 22, 87]));

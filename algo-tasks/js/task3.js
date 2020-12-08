@@ -1,4 +1,5 @@
 // ****** Task 635 ******
+// Об'єднати два масиви в один та відсортувати методом ЗЛИТТЯ 
 
 function makeSingleSequence(firstArr, secondArr) {
   const seq = [...firstArr, ...secondArr];
@@ -36,4 +37,11 @@ function makeSingleSequence(firstArr, secondArr) {
 }
 
 
-console.log(makeSingleSequence([2, 3, 5, 7, 9, 29], [3, 5, 7, 11, 13, 15, 22, 87]));
+console.log(makeSingleSequence([9, 5, 3, 7, 2, 29], [3, 5, 7, 11, 13, 15, 22, 87]));
+
+
+//     [3,2,4,5,7,6]
+//    [3,2,4] [5,7,6]
+//  [3,2] [4] [5,7] [6]
+//    [2,3,4] [5,6,7]
+//     [2,3,4,5,6,7]

@@ -1,0 +1,40 @@
+.calendar {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  padding: 20px;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 0px;
+  border-color: black;
+}
+
+.table caption {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 20px;
+}
+
+.table th {
+  background-color: #cccccc;
+}
+
+.table th,
+.table td {
+  font-size: 17px;
+  padding: 25px;
+}
+
+.table tr:nth-child(even) {
+  background-color: #ececec;
+}
+
+@media (max-width: 425px) {
+  .table th,
+  .table td {
+    font-size: 17px;
+    padding: 10px;
+  }
+}

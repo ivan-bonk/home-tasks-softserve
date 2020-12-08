@@ -1,0 +1,78 @@
+.admin-panel {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  padding: 40px;
+}
+
+.admin-panel .title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-image-block {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.drop-down {
+  border: 1px solid black;
+  width: 600px;
+  height: 300px;
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.admin-btn {
+  background: white;
+  height: 40px;
+  width: 150px;
+  font-size: 17px;
+  color: #f26522;
+  border: 2px solid #f26522;
+}
+
+.admin-btn:hover {
+  background: #f26522;
+  color: white;
+  cursor: pointer;
+}
+
+.admin-btn:focus {
+  outline: none;
+}
+
+.add-news-block {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  width: 600px;
+}
+
+.news-title {
+  height: 40px;
+}
+
+.admin-input {
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+
+.admin-input:focus {
+  outline: none;
+  border: 1px solid #f26522;
+}

@@ -1,4 +1,5 @@
 // ****** Task 585 ******
+// Перевтворити десяткове число в двійковеі
 
 function toBinary(num) {
   if (num <= 0) {
@@ -18,4 +19,4 @@ function toBinary(num) {
   return parseInt(binary.split('').reverse().join(''));
 }
 
-console.log(toBinary(1888));
+console.log(toBinary(16));

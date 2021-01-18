@@ -76,3 +76,56 @@
   outline: none;
   border: 1px solid #f26522;
 }
+
+.disabled {
+  border: 2px solid gray;
+  color: gray;
+}
+
+.disabled:hover {
+  cursor: not-allowed;
+  background: inherit;
+  color: inherit;
+}
+
+.empty {
+  border: 2px solid red;
+}
+
+.custom-file-input {
+  width: 154px;
+  color: transparent;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'Select some files';
+    display: inline-block;
+    outline: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+    background: white;
+    height: 40px;
+    width: 150px;
+    font-size: 17px;
+    color: #f26522;
+    border: 2px solid #f26522;
+    text-align: center;
+    line-height: 40px;
+}
+.custom-file-input:hover::before {
+  background: #f26522;
+  color: white;
+}
+.custom-file-input:active {
+  outline: 0;
+}
+
+.custom-file-input:focus {
+  outline: 0;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+}
+

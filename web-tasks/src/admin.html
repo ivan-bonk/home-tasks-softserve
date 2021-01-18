@@ -46,33 +46,29 @@
         <h2 class="title">Add news</h2>
         <div class="add-image-block">
           <div class="drop-down">
-            <div class="tip">Drop image here</div>
+            <div class="tip">Image</div>
           </div>
 
-          <button class="admin-btn">Add image</button>
+          <input id="file-upload" type="file" class="custom-file-input">
         </div>
 
         <div class="add-news-block">
           <div class="inputs">
             <input
+              id="new-title"
               class="admin-input news-title"
               type="text"
               placeholder="News title"
             />
             <textarea
-              class="admin-input"
-              cols="30"
-              rows="10"
-              placeholder="News short description"
-            ></textarea>
-            <textarea
+              id="new-text"
               class="admin-input"
               cols="30"
               rows="10"
               placeholder="News text"
             ></textarea>
           </div>
-          <button class="admin-btn">Add news</button>
+          <button id="new-submit" class="admin-btn">Add news</button>
         </div>
       </section>
     </main>
@@ -81,5 +77,7 @@
       <div>FOOTER</div>
       <div>&copy; All rights reserverd</div>
     </footer>
+
+    <script src="../dist/bundle.js"></script>
   </body>
 </html>

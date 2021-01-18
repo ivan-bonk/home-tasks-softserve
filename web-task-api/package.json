@@ -1,0 +1,22 @@
+{
+  "name": "web_task",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "test --passWithNoTests",
+    "lint": "eslint --fix . && echo 'Lint complete.'"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "mongodb": "^3.5.5",
+    "mongoose": "^5.9.4",
+    "nodemon": "^2.0.2"
+  }
+}

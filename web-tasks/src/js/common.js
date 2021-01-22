@@ -1,12 +1,22 @@
 export const getFormatedTime = () => {
   const dt = new Date(),
-        dd = addZeroPrefix(dt.getDate()),
-        mm = addZeroPrefix(dt.getMonth()+1),
-        yy = dt.getFullYear(),
-        hh = addZeroPrefix(dt.getHours()),
-        mn = addZeroPrefix(dt.getMinutes());
-  
+    dd = addZeroPrefix(dt.getDate()),
+    mm = addZeroPrefix(dt.getMonth() + 1),
+    yy = dt.getFullYear(),
+    hh = addZeroPrefix(dt.getHours()),
+    mn = addZeroPrefix(dt.getMinutes());
+
   return `${dd}.${mm}.${yy} ${hh}:${mn}`
+}
+
+export const savePost = (url, body) => {
+  fetch(`http://localhost:8080/${url}`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(body)
+  });
 }
 
 const addZeroPrefix = (num) => {
@@ -14,7 +24,7 @@ const addZeroPrefix = (num) => {
 }
 
 export const toogleBtn = (condition, button) => {
-  if(condition) {
+  if (condition) {
     button.classList.remove('disabled');
   } else {
     button.classList.add('disabled');
@@ -22,7 +32,7 @@ export const toogleBtn = (condition, button) => {
 }
 
 export const validateInput = (field, input) => {
-  if(input) {
+  if (input) {
     field.classList.remove('empty');
   } else {
     field.classList.add('empty');
